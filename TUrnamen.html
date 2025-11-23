@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURNAMEN MINI SOCCER PEMUDA NEGERI LAMA CUP 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/football-field-background.jpg'); /* Ganti dengan URL gambar latar belakang sepak bola (misalnya lapangan hijau) */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Overlay gelap untuk readability */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        nav button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #45a049;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        th {
+            background-color: rgba(0, 123, 255, 0.8);
+        }
+        .bracket {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .round {
+            margin: 20px 0;
+        }
+        .match {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        /* Responsive untuk mobile */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav button {
+                width: 80%;
+            }
+            table {
+                font-size: 12px;
+            }
+            .bracket {
+                flex-direction: column;
+            }
+            .match {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TURNAMEN MINI SOCCER PEMUDA NEGERI LAMA CUP 1</h1>
+            
+        </header>
+        
+        <nav>
+            <button onclick="showSection('jadwal')">Jadwal</button>
+            <button onclick="showSection('klasmen')">Klasmen</button>
+            <button onclick="showSection('grup')">Bagian Grup</button>
+            <button onclick="showSection('bagan')">Bagan 16 Besar</button>
+        </nav>
+        
+        <div id="jadwal" class="section active">
+            <h2>Jadwal Pertandingan</h2>
+            <p>Berikut adalah jadwal pertandingan terbaru. (Tambahkan foto jadwal di sini)</p>
+            <img src="jadwal.jpeg">
+            <img src="2.jpeg">
+            
+                    <!-- Tambahkan baris lainnya -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="klasmen" class="section">
+            <h2>Klasmen Liga</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posisi</th>
+                        <th>Tim</th>
+                        <th>Main</th>
+                        <th>Menang</th>
+                        <th>Seri</th>
+                        <th>Kalah</th>
+                        <th>Poin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Persib Bandung</td>
+                        <td>34</td>
+                        <td>22</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>74</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Persija Jakarta</td>
+                        <td>34</td>
+                        <td>20</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>69</td>
+                    </tr>
+                    <!-- Tambahkan baris lainnya -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="grup" class="section">
+            <h2>Bagian Grup</h2>
+            <p>Informasi tentang pembagian grup. (Tambahkan foto grup di sini)</p>
+            <img src="https://via.placeholder.com/800x400?text=Foto+Grup" alt="Foto Grup">
+            <h3>Grup A</h3>
+            <ul>
+                <li>Persib Bandung</li>
+                <li>Persija Jakarta</li>
+                <li>Arema FC</li>
+            </ul>
+            <h3>Grup B</h3>
+            <ul>
+                <li>PSIS Semarang</li>
+                <li>Bali United</li>
+                <li>Persebaya Surabaya</li>
+            </ul>
+            <!-- Tambahkan grup lainnya -->
+        </div>
+        
+        <div id="bagan" class="section">
+            <h2>Bagan 16 Besar</h2>
+            <div class="bracket">
+                <div class="round">
+                    <h3>Ronde 1</h3>
+                    <div class="match">Tim A vs Tim B</div>
+                    <div class="match">Tim C vs Tim D</div>
+                </div>
+                <div class="round">
+                    <h3>Ronde 2</h3>
+                    <div class="match">Pemenang 1 vs Pemenang 2</div>
+                </div>
+                <!-- Tambahkan ronde lainnya -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Sembunyikan semua section
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Tampilkan section yang dipilih
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
